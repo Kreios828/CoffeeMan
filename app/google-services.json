@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "990839649220",
+    "firebase_url": "https://coffeeman-d9360.firebaseio.com",
+    "project_id": "coffeeman-d9360",
+    "storage_bucket": "coffeeman-d9360.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990839649220:android:975af55a337e5601c4aa91",
+        "android_client_info": {
+          "package_name": "kreios828.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "990839649220-9qsrgajujfabtdt48flnae6qk4hu3to1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kreios828.com",
+            "certificate_hash": "cad005f1e39adf6b31294fb1cbe0060af0e205ba"
+          }
+        },
+        {
+          "client_id": "990839649220-d28uund7kms8lmul3tvv70klnkvbhgr6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATH96ciQFAywQlivjAOKvlSV_OquZ8F4g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "990839649220-d28uund7kms8lmul3tvv70klnkvbhgr6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

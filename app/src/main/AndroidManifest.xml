@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kreios828.com">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize"></activity>
+        <activity
+            android:name=".activities.LoginActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize">
+
+        </activity>
+        <activity android:name=".activities.RatingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.CezveRatingActivity" />
+        <activity android:name=".activities.MochaRatingActivity" />
+        <activity android:name=".activities.EspressoRatingActivity" />
+        <activity android:name=".activities.AutomaticRatingActivity" />
+        <activity android:name=".activities.FavouriteActivity" />
+        <activity android:name=".activities.AddActivity" />
+        <activity android:name=".activities.RecipesActivity" />
+        <activity android:name=".activities.ProfileActivity" />
+        <activity android:name=".activities.EditProfileActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="kreios828.com.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"></meta-data>
+        </provider>
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kreios828.com.views.KeyboardAwareScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/braindark"
+        tools:context=".activities.LoginActivity">
+
+        <EditText
+            android:id="@+id/email_input"
+            style="@style/login_input"
+            android:background="@drawable/login_input_bg"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/password_input"
+            style="@style/login_input"
+            android:background="@drawable/login_input_bg"
+            android:hint="Password"
+            android:inputType="textEmailAddress"
+
+
+            app:layout_constraintTop_toBottomOf="@id/email_input" />
+
+        <Button
+            android:id="@+id/login_btn"
+            style="@style/login_btn"
+            android:text="Log in"
+            app:layout_constraintTop_toBottomOf="@id/password_input" />
+
+        <TextView
+            android:id="@+id/create_account_text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/top_border_loginctivity"
+            android:gravity="center"
+            android:text="@string/create_account"
+            android:textColor="@color/brain"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</kreios828.com.views.KeyboardAwareScrollView>

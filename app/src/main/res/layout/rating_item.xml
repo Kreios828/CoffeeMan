@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/user_photo_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/profile_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/username_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Will Smith"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/user_photo_image"
+        app:layout_constraintStart_toEndOf="@id/user_photo_image"
+
+        app:layout_constraintTop_toTopOf="@id/user_photo_image" />
+
+    <ImageView
+        android:id="@+id/more_image"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:src="@drawable/ic_more"
+        app:layout_constraintBottom_toBottomOf="@id/user_photo_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/user_photo_image" />
+
+    <ImageView
+        android:id="@+id/post_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_placeholder"
+        app:layout_constraintBottom_toTopOf="@id/like_image"
+        app:layout_constraintTop_toBottomOf="@id/user_photo_image" />
+
+    <ImageView
+        android:id="@+id/like_image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_likes_border"
+        app:layout_constraintBottom_toTopOf="@id/likes_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/post_image" />
+
+    <ImageView
+        android:id="@+id/comment_image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_comments_border"
+        app:layout_constraintBottom_toBottomOf="@id/like_image"
+        app:layout_constraintStart_toEndOf="@id/like_image"
+        app:layout_constraintTop_toTopOf="@id/like_image" />
+
+    <TextView
+        android:id="@+id/likes_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="828.123 likes"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/caption_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/like_image"
+
+        />
+
+    <TextView
+        android:id="@+id/caption_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:paddingStart="10dp"
+        android:text="Will Smith This is a caption for the post. It's actually a very long capture."
+        android:textColor="@color/braindark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/likes_text" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
